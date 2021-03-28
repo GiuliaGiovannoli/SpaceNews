@@ -1,0 +1,125 @@
+@import url('https://fonts.googleapis.com/css2?family=DotGothic16&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500&display=swap');
+
+.pagination {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 4%;
+}
+
+#header {
+    background-image: url('../img/space.jpg');
+    margin: 2%;
+    text-align: center;
+}
+
+#title {
+    font-family: 'DotGothic16', sans-serif;
+    font-size: 3em;
+    font-weight: bolder;
+    margin-bottom: 5%;
+    margin-top: 4%;
+    color: whitesmoke;
+}
+
+#paragraph {
+    font-family: 'Montserrat', sans-serif;
+    color: whitesmoke;
+    margin-bottom: 2%;
+    font-size: 2rem;
+}
+
+#title, #paragraph, #transparent {
+    background: transparent;
+}
+
+#center {
+    margin: 2% 40%; 
+}
+
+.all {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-content: space-around;
+    justify-items: baseline;
+    margin: 5%;
+}
+
+#one {
+    margin: 2%;
+    display: flex;
+    justify-content: space-around;
+    border: 3px solid black;
+    font-family: 'Montserrat', sans-serif;
+    background-color: whitesmoke;
+}
+
+#one:hover{
+    box-shadow: inset -2px -2px 4px 4px darkgrey;
+
+}
+
+#one a {
+    text-decoration: none;
+    color: black;
+}
+
+#one a:hover {
+    text-decoration: underline;
+}
+
+#pic {
+    width: 30%;
+    margin: 0.5%;
+}
+
+#socials {
+    display: flex;
+    justify-content: space-around;
+}
+
+#network {
+    cursor: pointer;
+}
+
+.search {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 2%;
+}
+
+#pages {
+    margin: 2% 35%;
+}
+
+.searchTerm {
+    width: 40%;
+    border: 3px solid black;
+    outline: none;
+    color: black;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 2em;
+    background-color: whitesmoke;
+}
+
+@media all and (max-width : 800px){
+    .searchTerm {
+        font-size:1.3em;
+    }
+}
+
+#Btn{
+    border: 16px solid darkgray;
+    background-color: darkgray;
+    text-align: center;
+    color:  black;
+    border-radius: 40%;
+}
+
+.two {
+    margin: 2% 35%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
