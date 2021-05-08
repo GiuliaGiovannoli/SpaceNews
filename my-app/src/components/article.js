@@ -52,22 +52,14 @@ export default function Article({articles}) {
           </Typography>
           <Typography variant="subtitle1" color="textSecondary">
           <br></br>
-          Published Date: {article.published_date[0]}{article.published_date[1]}
-        {article.published_date[2]}{article.published_date[3]}
-        {article.published_date[4]}{article.published_date[5]}
-        {article.published_date[6]}{article.published_date[7]}
-        {article.published_date[8]}{article.published_date[9]}
+          Published Date: {article.publishedAt[0]}{article.publishedAt[1]}
+        {article.publishedAt[2]}{article.publishedAt[3]}
+        {article.publishedAt[4]}{article.publishedAt[5]}
+        {article.publishedAt[6]}{article.publishedAt[7]}
+        {article.publishedAt[8]}{article.publishedAt[9]}
           </Typography>
           <Typography variant="subtitle1" color="textSecondary">
-          {article.tags.length >= 1 ? 
-        <p id="ptag">Tags: {article.tags[0]} {article.tags[1]} {article.tags[2]} {article.tags[3]}</p>
-        : <p></p>
-        }
-        {article.categories.length >= 1 ? 
-        <p id="ptag">Categories: {article.categories[0]} {article.categories[1]} 
-        {article.categories[2]} {article.categories[3]}</p>
-        : <p></p>
-        }
+          <p>{article.summary}</p>
           </Typography>
         </CardContent>
         <div className={classes.controls}>
@@ -76,7 +68,7 @@ export default function Article({articles}) {
       </div>
       <CardMedia
         className={classes.cover}
-        image={article.featured_image}
+        image={article.imageUrl}
         title="Space News"
         id="pic"
       />
