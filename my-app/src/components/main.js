@@ -16,7 +16,7 @@ export default function Main() {
   const [total, setTotal] = useState()
   const [userInput, setUserInput] = useState("");
 
-  const url = "https://spaceflightnewsapi.net/api/v1/articles"
+  const url = "https://spaceflightnewsapi.net/api/v2/articles"
 
   /* useEffect(() => {
     fetch(url).then(response => response.json())
@@ -34,9 +34,10 @@ export default function Main() {
 
   const getArticlePerPage = () => {
     const endpoint = url + `?page=${page}`;
-    fetch(endpoint).then(response => response.json())
+    fetch(url).then(response => response.json())
     .then(data => {
-      setArticles(data.docs);
+      console.log(data)
+      setArticles(data);
       setTotal(data.totalPages);
     }).catch( (err) => {
       console.log(err)
